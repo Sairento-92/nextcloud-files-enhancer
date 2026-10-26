@@ -31,5 +31,9 @@ return [
         // Media Converter & Batch Share
         ['name' => 'media#convert', 'url' => '/api/v1/media/convert', 'verb' => 'POST'],
         ['name' => 'share#batch', 'url' => '/api/v1/share/batch', 'verb' => 'POST'],
+
+        // PDF Tools (Merge & Action)
+        ['name' => 'pdf#merge', 'url' => '/api/v1/pdf/merge', 'verb' => 'POST'],
+        ['name' => 'pdf#action', 'url' => '/api/v1/pdf/action', 'verb' => 'POST'],
     ]
 ];

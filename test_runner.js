@@ -156,8 +156,8 @@ const tests = [
         detail: executionError ? executionError.message : 'Wykonano bezbłędnie'
     },
     {
-        name: 'Inicjalizacja aplikacji Files Enhancer v1.4.0 w konsoli',
-        pass: mockContext.__fe_logs.some(l => l.includes('v1.4.0')),
+        name: 'Inicjalizacja aplikacji Files Enhancer v1.5.0 w konsoli',
+        pass: mockContext.__fe_logs.some(l => l.includes('v1.5.0')),
         detail: mockContext.__fe_logs[0] || 'Brak logu'
     },
     {
@@ -169,6 +169,12 @@ const tests = [
         name: 'Rejestracja akcji menu kontekstowego plików (np. Sejf, Konwerter)',
         pass: (mockContext.window.OCA.Files.fileActions.actions || []).length > 0,
         detail: `Zarejestrowano ${mockContext.window.OCA.Files.fileActions.actions.length} akcji menu`
+    },
+    {
+        name: 'Rejestracja akcji Narzędzi PDF (fePdfTools) i Diff (feDiffCompare)',
+        pass: (mockContext.window.OCA.Files.fileActions.actions || []).some(a => a.name === 'fePdfTools') &&
+              (mockContext.window.OCA.Files.fileActions.actions || []).some(a => a.name === 'feDiffCompare'),
+        detail: 'Narzędzia PDF i Diff zarejestrowane w OCA.Files.fileActions'
     },
     {
         name: 'Obsługa szyfrowania i pamięci Sejfu (SecureVault storage)',

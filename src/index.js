@@ -30,6 +30,9 @@ import { FolderActionBar } from './folderActionBar.js';
 import { ModernNewMenu } from './modernNewMenu.js';
 import { SearchBreadcrumb } from './searchBreadcrumb.js';
 import { ViewerFolderPager } from './viewerFolderPager.js';
+import { DuplicateManager } from './duplicateManager.js';
+import { PdfTools } from './pdfTools.js';
+import { DiffViewer } from './diffViewer.js';
 
 class FilesEnhancerApp {
     constructor() {
@@ -38,7 +41,7 @@ class FilesEnhancerApp {
     }
 
     init() {
-        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files v1.4.0 (by Sairento)...');
+        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files v1.5.0 (by Sairento)...');
 
         const bootstrap = () => {
             if (this.initialized) return;
@@ -73,6 +76,9 @@ class FilesEnhancerApp {
             new ModernNewMenu();      // Issue #56523
             new SearchBreadcrumb();   // Issue #56546
             new ViewerFolderPager();  // PR #65058
+            new DuplicateManager();   // Graficzny menedżer duplikatów
+            new PdfTools();           // Narzędzia PDF (Merge, Split, Rotate)
+            new DiffViewer();         // Wizualna porównywarka diff dla plików
 
             this.injectHeaderPill();
             this.initialized = true;

@@ -38,9 +38,12 @@
       * occ files:enhancer:stats - szczegółowe statystyki typów plików (obrazy, filmy, dokumenty, kod)
       * occ files:enhancer:cleanup-trash - inteligentne czyszczenie kosza i starych wersji
       * occ files:enhancer:cleanup-orphans - bezpieczne usuwanie osieroconych rekordów bazy filecache
+    - 🔍 Graficzny Menedżer Duplikatów (Web UI Deduplicator): Wyszukiwanie identycznych plików po sumie kontrolnej i rozmiarze z możliwością hurtowego usuwania zbędnych kopii jednym kliknięciem.
+    - 📄 Narzędzia PDF (PDF Tools): Łączenie wielu dokumentów PDF (Merge), obracanie stron o 90/180/270 stopni i wyodrębnianie stron (Split) bezpośrednio w chmurze.
+    - ⚡ Wizualna Porównywarka Różnic (Diff Viewer): Porównywanie dwóch plików tekstowych, kodu lub dokumentów linijka po linijce (Side-by-Side & Unified Diff).
     - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
     </description>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
     <licence>agpl</licence>
     <author>Sairento / Huriko</author>
     <namespace>FilesEnhancer</namespace>

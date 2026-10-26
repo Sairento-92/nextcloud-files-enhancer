@@ -18,7 +18,9 @@ export class SearchBreadcrumb {
     }
 
     injectPathChips() {
-        const isSearch = window.location.hash.includes('search') || window.location.search.includes('search') || document.querySelector('.search-results');
+        const hash = window.location.hash || '';
+        const search = window.location.search || '';
+        const isSearch = hash.includes('search') || search.includes('search') || !!document.querySelector('.search-results');
         if (!isSearch) return;
 
         const rows = document.querySelectorAll('tr[data-file], .unified-search__result, [data-entry-id]');
