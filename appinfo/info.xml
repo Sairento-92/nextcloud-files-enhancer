@@ -6,6 +6,13 @@
     <summary>Zaawansowany zestaw narzędzi dla Nextcloud Files: QuickLook (podgląd spacją), archiwizator ZIP/TAR na serwerze, hurtowa zmiana nazw, kolorowe etykiety, kalkulator hashy i narzędzia OCC.</summary>
     <description>Rozszerzenie dla Nextcloud Files wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności:
     - ⚡ QuickLook: Błyskawiczny podgląd plików po naciśnięciu Spacji (obrazy, filmy, audio, dokumenty, kod z kolorowaniem składni, PDF) z płynną nawigacją strzałkami.
+    - 🔒 Ochrona Kosza PIN-em/hasłem (Issue #58407): Zabezpieczenie trwałego usuwania i opróżniania kosza przed przypadkową lub nieautoryzowaną utratą danych.
+    - 🔄 Live Auto-Refresh (PR #65393): Automatyczne odświeżanie listy plików w czasie rzeczywistym po wykryciu zmian zdalnych bez przeładowania F5.
+    - 🗑️ Usuwanie z widoków zagregowanych (PR #65811 &amp; Issue #65281): Bezpośrednie usuwanie plików z widoków Ostatnie, Ulubione i Wyniki Wyszukiwania.
+    - 🧭 Pasek akcji bieżącego katalogu (Issue #57752): Szybkie akcje wewnątrz folderu (Udostępnij, Pobierz jako ZIP, Sejf, Kopiuj ścieżkę) na górnym pasku.
+    - ➕ Nowoczesne menu „+ Nowy” (Issue #56523): Podział na czytelne sekcje „Wgraj z dysku” oraz „Utwórz w chmurze”.
+    - 📍 Breadcrumb w wynikach wyszukiwania (Issue #56546): Czytelna ścieżka lokalizacji pod plikami o takich samych nazwach.
+    - ⏩ Nawigacja w podglądzie (PR #65058): Przewijanie Poprzedni/Następny do sąsiednich plików w folderze przy otwarciu pojedynczego pliku.
     - 📂 Drag &amp; Drop do drzewa katalogów (Issue #65764): Przeciąganie i upuszczanie plików bezpośrednio na boczne drzewo nawigacji folderów.
     - 📖 Rich Workspace README Header (Issue #62413): Automatyczny, zwijany estetyczny panel z podglądem pliku README.md na górze katalogu.
     - 🔒 Prywatny Sejf Folderu (Issue #56519): Ochrona poufnych folderów osobnym hasłem/PIN-em (ukrywanie zawartości w widoku).
@@ -33,7 +40,7 @@
       * occ files:enhancer:cleanup-orphans - bezpieczne usuwanie osieroconych rekordów bazy filecache
     - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
     </description>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <licence>agpl</licence>
     <author>Sairento / Huriko</author>
     <namespace>FilesEnhancer</namespace>

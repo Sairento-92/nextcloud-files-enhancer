@@ -3,14 +3,36 @@
 Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files** (`/apps/files`), wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności, narzędzia masowe, podglądy i potężny zestaw poleceń konsolowych OCC.
 
 ![Files Enhancer Badge](https://img.shields.io/badge/Nextcloud-Files_Enhancer-0082c9?style=for-the-badge&logo=nextcloud&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.3.0-success?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.4.0-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-AGPL--3.0-blue?style=for-the-badge)
 
 ---
 
 ## 🌟 Najważniejsze Możliwości i Funkcje
 
-### 1. 📂 Przeciąganie i Upuszczanie do Drzewa Katalogów (Drag & Drop to Folder Tree - Issue #65764)
+### 1. 🔒 Ochrona Kosza PIN-em / Hasłem (Issue #58407)
+- Zabezpieczenie operacji trwałego opróżniania kosza oraz usuwania plików z kosza kodem PIN/hasłem.
+- Dedykowany przycisk konfiguracji PIN-u w lewym panelu kosza zapobiegający nieodwracalnej utracie danych.
+
+### 2. 🔄 Live Auto-Refresh Listy Plików (PR #65393)
+- Automatyczne odświeżanie widoku katalogu po wykryciu zmian zdalnych (synchronizacja z innych urządzeń / WebDAV ETag) w czasie rzeczywistym bez potrzeby odświeżania strony F5.
+
+### 3. 🗑️ Bezpośrednie Usuwanie z Widoków Ostatnie i Szukaj (PR #65811 & Issue #65281)
+- Możliwość natychmiastowego usunięcia pliku z poziomu widoków Ostatnie, Ulubione i Wyniki Wyszukiwania bez błędów ścieżki bazowej.
+
+### 4. 🧭 Pasek Akcji Bieżącego Katalogu (Issue #57752)
+- Gdy użytkownik znajduje się wewnątrz folderu, na górnym pasku narzędzi pojawiają się bezpośrednie przyciski: *Udostępnij*, *Pobierz jako ZIP*, *Zabezpiecz sejfem* oraz *Kopiuj ścieżkę* bez konieczności cofania się wyżej.
+
+### 5. ➕ Nowoczesne Menu „+ Nowy” (Issue #56523)
+- Przejrzysty podział rozwijanego menu dodawania na dwie sekcje: **„📤 Wgraj z dysku”** (pliki, cały folder) oraz **„✨ Utwórz w chmurze”** (folder, dokument, notatka).
+
+### 6. 📍 Breadcrumb w Wynikach Wyszukiwania (Issue #56546)
+- Automatyczne dołączanie czytelnej ścieżki katalogu pod nazwą pliku w wynikach wyszukiwania, ułatwiające rozróżnianie plików o tej samej nazwie.
+
+### 7. ⏩ Płynna Nawigacja w Podglądzie (PR #65058)
+- Przyciski `‹` i `›` (oraz skróty `←` i `→`) w modalnym oknie podglądu pozwalające na swobodne przeglądanie sąsiednich plików z folderu, nawet gdy plik został otwarty pojedynczo.
+
+### 8. 📂 Przeciąganie i Upuszczanie do Drzewa Katalogów (Drag & Drop to Folder Tree - Issue #65764)
 - Bezpośrednie przeciąganie plików i folderów z listy na boczne menu nawigacji drzewa folderów po lewej stronie.
 - Automatyczne podświetlenie docelowego katalogu i bezproblemowe przenoszenie przez natywne żądanie WebDAV MOVE.
 

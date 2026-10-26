@@ -563,3 +563,125 @@ tr[data-file]:hover .fe-quick-actions-bar,
     white-space: pre-wrap;
     word-break: break-word;
 }
+
+/* === Trash Guard === */
+.fe-trash-pin-toggle {
+    margin: 4px 12px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid var(--color-border, #ddd);
+    background: var(--color-main-background, #fff);
+    color: var(--color-main-text, #333);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.fe-trash-pin-toggle:hover {
+    background: var(--color-primary, #0082c9);
+    color: #fff;
+    border-color: var(--color-primary, #0082c9);
+}
+
+/* === Live Refresh Pulse === */
+@keyframes fe-pulse-glow {
+    0% { transform: scale(1); filter: brightness(1); }
+    50% { transform: scale(1.15); filter: brightness(1.4) drop-shadow(0 0 6px #0082c9); }
+    100% { transform: scale(1); filter: brightness(1); }
+}
+.fe-pulse {
+    animation: fe-pulse-glow 0.8s ease-in-out;
+}
+
+/* === Inside Folder Action Bar (Issue #57752) === */
+.fe-folder-actions-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: var(--color-main-background-translucent, rgba(0, 0, 0, 0.04));
+    border: 1px solid var(--color-border, rgba(0, 0, 0, 0.08));
+}
+.fe-fab-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+.fe-fab-label {
+    color: var(--color-text-maxcontrast, #666);
+    margin-right: 4px;
+}
+.fe-fab-btn {
+    border: 1px solid var(--color-border, #ccc);
+    background: var(--color-main-background, #fff);
+    color: var(--color-main-text, #333);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.fe-fab-btn:hover {
+    background: var(--color-primary, #0082c9);
+    color: #fff;
+    border-color: var(--color-primary, #0082c9);
+}
+
+/* === Modern New Menu (Issue #56523) === */
+.fe-menu-section-header {
+    padding: 6px 12px 2px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-text-maxcontrast, #888);
+    letter-spacing: 0.5px;
+    border-top: 1px solid var(--color-border, #eee);
+    margin-top: 4px;
+}
+.fe-menu-section-header:first-child {
+    border-top: none;
+    margin-top: 0;
+}
+
+/* === Search Breadcrumb Chips (Issue #56546) === */
+.fe-search-path-chip {
+    display: block;
+    font-size: 11px;
+    color: var(--color-text-maxcontrast, #888);
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 350px;
+}
+
+/* === Viewer Folder Pager (PR #65058) === */
+.fe-viewer-nav-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 64px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background 0.2s, transform 0.15s;
+    user-select: none;
+}
+.fe-viewer-nav-btn:hover {
+    background: rgba(0, 130, 201, 0.85);
+    transform: translateY(-50%) scale(1.08);
+}
+.fe-viewer-prev {
+    left: 16px;
+}
+.fe-viewer-next {
+    right: 16px;
+}
