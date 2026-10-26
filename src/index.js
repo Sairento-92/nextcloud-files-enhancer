@@ -16,6 +16,9 @@ import { DotfilesToggle } from './dotfilesToggle.js';
 import { FolderSorting } from './folderSorting.js';
 import { ExactTimestamps } from './exactTimestamps.js';
 import { PinnedFolders } from './pinnedFolders.js';
+import { BatchShare } from './batchShare.js';
+import { ImageConverter } from './imageConverter.js';
+import { ConflictGuard } from './conflictGuard.js';
 
 class FilesEnhancerApp {
     constructor() {
@@ -45,6 +48,9 @@ class FilesEnhancerApp {
             new FolderSorting();     // Issue #65101
             new ExactTimestamps();   // Issue #22278 & #54784
             new PinnedFolders();     // PR #61825
+            new BatchShare();        // Issue #3902 & #26248
+            new ImageConverter();    // Media conversion (WebP, PNG, JPG)
+            new ConflictGuard();     // Issue #33719
 
             this.injectHeaderPill();
             this.initialized = true;

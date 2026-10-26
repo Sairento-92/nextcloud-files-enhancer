@@ -12,6 +12,9 @@
     - 🔄 Zapamiętywane sortowanie per katalog (Issue #65101): Niezależne, trwałe ustawienia sortowania dla każdego folderu.
     - 🕒 Dokładne znaczniki czasu (Issue #22278 &amp; #54784): Wyświetlanie dokładnej daty i godziny zamiast przybliżonych dat relatywnych.
     - 📌 Przypinanie folderów na samej górze (PR #61825): Możliwość przypięcia kluczowych katalogów na górze widoku.
+    - 🔗 Masowe udostępnianie (Issue #3902 &amp; #26248): Generowanie linków publicznych dla wielu zaznaczonych plików jednocześnie.
+    - 🖼️ Konwerter obrazów: Bezpośrednia konwersja plików graficznych do formatów WebP, PNG i JPG na serwerze.
+    - ⚠️ Ochrona przed konfliktami nazw (Issue #33719): Wczesne ostrzeganie przed nadpisaniem istniejących plików.
     - 📦 Server-side Archive Manager: Rozpakowywanie archiwów ZIP i TAR.GZ bezpośrednio na serwerze bez konieczności pobierania, oraz kompresja wybranych plików do nowego archiwum ZIP.
     - 🏷️ Kolorowe etykiety (Color Tags): Oznaczanie plików i folderów kolorowymi punktami (jak w macOS Finder) dla łatwej organizacji wizualnej i szybkiego filtrowania.
     - 🔤 Hurtowa zmiana nazw (Batch Renamer): Masowa modyfikacja nazw plików (prefiks, sufiks, zamiana tekstu, numeracja sekwencyjna 001..099).
@@ -23,9 +26,10 @@
       * occ files:enhancer:scan-deep - głębokie skanowanie i naprawa osieroconych wpisów cache
       * occ files:enhancer:stats - szczegółowe statystyki typów plików (obrazy, filmy, dokumenty, kod)
       * occ files:enhancer:cleanup-trash - inteligentne czyszczenie kosza i starych wersji
+      * occ files:enhancer:cleanup-orphans - bezpieczne usuwanie osieroconych rekordów bazy filecache
     - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
     </description>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <licence>agpl</licence>
     <author>Sairento / Huriko</author>
     <namespace>FilesEnhancer</namespace>

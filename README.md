@@ -3,7 +3,7 @@
 Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files** (`/apps/files`), wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności, narzędzia masowe, podglądy i potężny zestaw poleceń konsolowych OCC.
 
 ![Files Enhancer Badge](https://img.shields.io/badge/Nextcloud-Files_Enhancer-0082c9?style=for-the-badge&logo=nextcloud&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.1.0-success?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.2.0-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-AGPL--3.0-blue?style=for-the-badge)
 
 ---
@@ -41,7 +41,18 @@ Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files*
 - Nowa akcja w menu folderu: **„📌 Przypnij / Odepnij z góry”**.
 - Przypięte foldery są zawsze prezentowane na samej górze listy z odznaką 📌, niezależnie od bieżącego sortowania.
 
-### 8. 📦 Server-side Archive Manager (Rozpakowywanie i Pakowanie ZIP na serwerze)
+### 8. 🔗 Masowe Udostępnianie Wielu Plików (Issue #3902 & #26248)
+- Przycisk na pasku zaznaczenia: **„Udostępnij zaznaczone”**.
+- Tworzy linki publiczne dla wszystkich zaznaczonych plików i prezentuje je w czytelnym oknie z możliwością skopiowania wszystkich linków jednym kliknięciem.
+
+### 9. 🖼️ Konwerter Obrazów na Serwerze (WebP / PNG / JPG)
+- Opcja w menu pliku: **„🖼️ Konwertuj format”**.
+- Błyskawiczna konwersja do WebP (oszczędność 30-50% miejsca bez straty jakości), PNG lub JPG bezpośrednio na serwerze.
+
+### 10. ⚠️ Ochrona przed Kolizją Nazw (Conflict Guard - Issue #33719)
+- Wczesne wykrywanie i ostrzeganie przed wgrywaniem plików o nazwach, które już istnieją w bieżącym katalogu.
+
+### 11. 📦 Server-side Archive Manager (Rozpakowywanie i Pakowanie ZIP na serwerze)
 - **Rozpakuj na serwerze**: Dodaje do menu kontekstowego plików archiwów (`.zip`, `.tar.gz`, `.tgz`) opcję bezpośredniego rozpakowania w chmurze bez marnowania transferu na pobieranie na komputer i ponowne wysyłanie.
 - **Spakuj do ZIP**:
   - Działa dla pojedynczego pliku lub całego katalogu.

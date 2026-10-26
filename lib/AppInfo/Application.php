@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace OCA\FilesEnhancer\AppInfo;
 
+use OCA\FilesEnhancer\Command\CleanupOrphansCommand;
 use OCA\FilesEnhancer\Command\CleanupTrashCommand;
 use OCA\FilesEnhancer\Command\DeepScanCommand;
 use OCA\FilesEnhancer\Command\DuplicatesCommand;
@@ -35,6 +36,7 @@ class Application extends App implements IBootstrap {
         $context->registerCommand(DuplicatesCommand::class);
         $context->registerCommand(DeepScanCommand::class);
         $context->registerCommand(CleanupTrashCommand::class);
+        $context->registerCommand(CleanupOrphansCommand::class);
     }
 
     public function boot(IBootContext $context): void {

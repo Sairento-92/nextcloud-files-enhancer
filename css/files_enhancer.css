@@ -438,3 +438,69 @@ tr[data-file]:hover .fe-quick-actions-bar,
     font-size: 13px;
     vertical-align: middle;
 }
+
+/* Batch Share Modal (Issue #3902) */
+.fe-batch-share-modal,
+.fe-convert-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fe-batch-share-box,
+.fe-convert-box {
+    width: 540px;
+    max-width: 90vw;
+    background: var(--color-main-background, #fff);
+    border: 1px solid var(--color-border, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.fe-shares-list {
+    max-height: 250px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+.fe-share-item {
+    background: var(--color-main-background-translucent, rgba(0, 0, 0, 0.03));
+    border: 1px solid var(--color-border, #eee);
+    border-radius: 6px;
+    padding: 8px 10px;
+}
+.fe-share-item-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fe-share-item-url-wrap {
+    display: flex;
+    gap: 6px;
+}
+.fe-share-item-url-wrap input {
+    flex: 1;
+    font-size: 12px;
+    padding: 4px 8px;
+    border: 1px solid var(--color-border, #ccc);
+    border-radius: 4px;
+}
+
+/* Tight space filename wrapping (PR #65131) */
+.nametext .innernametext,
+.file-name {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}

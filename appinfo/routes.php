@@ -27,5 +27,9 @@ return [
         // Stats & Duplicates
         ['name' => 'stats#getOverview', 'url' => '/api/v1/stats', 'verb' => 'GET'],
         ['name' => 'stats#getDuplicates', 'url' => '/api/v1/duplicates', 'verb' => 'GET'],
+
+        // Media Converter & Batch Share
+        ['name' => 'media#convert', 'url' => '/api/v1/media/convert', 'verb' => 'POST'],
+        ['name' => 'share#batch', 'url' => '/api/v1/share/batch', 'verb' => 'POST'],
     ]
 ];
