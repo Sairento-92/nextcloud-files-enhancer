@@ -6,6 +6,12 @@
     <summary>Zaawansowany zestaw narzędzi dla Nextcloud Files: QuickLook (podgląd spacją), archiwizator ZIP/TAR na serwerze, hurtowa zmiana nazw, kolorowe etykiety, kalkulator hashy i narzędzia OCC.</summary>
     <description>Rozszerzenie dla Nextcloud Files wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności:
     - ⚡ QuickLook: Błyskawiczny podgląd plików po naciśnięciu Spacji (obrazy, filmy, audio, dokumenty, kod z kolorowaniem składni, PDF) z płynną nawigacją strzałkami.
+    - 🛡️ Delete Key Guard (Issue #62278): Ochrona przed przypadkowym usunięciem bieżącego katalogu po naciśnięciu Delete.
+    - ⚡ Szybkie akcje wiersza (Issue #59665): Bezpośrednie ikony szybkiego pobrania i usunięcia w wierszu pliku (hover).
+    - 👁️ Przełącznik ukrytych plików (Issue #39027): Przycisk ukrywania/pokazywania .dotfiles (.DS_Store, .git, .env, Thumbs.db).
+    - 🔄 Zapamiętywane sortowanie per katalog (Issue #65101): Niezależne, trwałe ustawienia sortowania dla każdego folderu.
+    - 🕒 Dokładne znaczniki czasu (Issue #22278 &amp; #54784): Wyświetlanie dokładnej daty i godziny zamiast przybliżonych dat relatywnych.
+    - 📌 Przypinanie folderów na samej górze (PR #61825): Możliwość przypięcia kluczowych katalogów na górze widoku.
     - 📦 Server-side Archive Manager: Rozpakowywanie archiwów ZIP i TAR.GZ bezpośrednio na serwerze bez konieczności pobierania, oraz kompresja wybranych plików do nowego archiwum ZIP.
     - 🏷️ Kolorowe etykiety (Color Tags): Oznaczanie plików i folderów kolorowymi punktami (jak w macOS Finder) dla łatwej organizacji wizualnej i szybkiego filtrowania.
     - 🔤 Hurtowa zmiana nazw (Batch Renamer): Masowa modyfikacja nazw plików (prefiks, sufiks, zamiana tekstu, numeracja sekwencyjna 001..099).
@@ -19,7 +25,7 @@
       * occ files:enhancer:cleanup-trash - inteligentne czyszczenie kosza i starych wersji
     - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
     </description>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <licence>agpl</licence>
     <author>Sairento / Huriko</author>
     <namespace>FilesEnhancer</namespace>

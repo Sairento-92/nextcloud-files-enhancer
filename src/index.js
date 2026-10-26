@@ -10,6 +10,12 @@ import { BatchRenamer } from './batchRenamer.js';
 import { HashCalculator } from './hashCalculator.js';
 import { FolderSizeCalculator } from './folderSize.js';
 import { QuickPaths } from './quickPaths.js';
+import { DeleteGuard } from './deleteGuard.js';
+import { QuickActions } from './quickActions.js';
+import { DotfilesToggle } from './dotfilesToggle.js';
+import { FolderSorting } from './folderSorting.js';
+import { ExactTimestamps } from './exactTimestamps.js';
+import { PinnedFolders } from './pinnedFolders.js';
 
 class FilesEnhancerApp {
     constructor() {
@@ -18,7 +24,7 @@ class FilesEnhancerApp {
     }
 
     init() {
-        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files (by Sairento)...');
+        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files v1.1.0 (by Sairento)...');
 
         const bootstrap = () => {
             if (this.initialized) return;
@@ -31,6 +37,14 @@ class FilesEnhancerApp {
             new HashCalculator();
             new FolderSizeCalculator();
             new QuickPaths();
+            
+            // Community PRs & Issues enhancements
+            new DeleteGuard();       // Issue #62278
+            new QuickActions();      // Issue #59665
+            new DotfilesToggle();    // Issue #39027
+            new FolderSorting();     // Issue #65101
+            new ExactTimestamps();   // Issue #22278 & #54784
+            new PinnedFolders();     // PR #61825
 
             this.injectHeaderPill();
             this.initialized = true;
@@ -54,7 +68,7 @@ class FilesEnhancerApp {
         if (header && !document.querySelector('.fe-header-badge')) {
             const pill = document.createElement('div');
             pill.className = 'fe-header-badge';
-            pill.title = 'Files Enhancer aktywny (QuickLook, ZIP/TAR, Color Tags, Hashe, Batch Rename)';
+            pill.title = 'Files Enhancer aktywny (QuickLook, Delete Guard, ZIP/TAR, Color Tags, Hashe, Batch Rename, Pinned Folders)';
             pill.innerHTML = `<span>⚡ Files+</span>`;
             header.appendChild(pill);
         }

@@ -3,7 +3,7 @@
 Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files** (`/apps/files`), wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności, narzędzia masowe, podglądy i potężny zestaw poleceń konsolowych OCC.
 
 ![Files Enhancer Badge](https://img.shields.io/badge/Nextcloud-Files_Enhancer-0082c9?style=for-the-badge&logo=nextcloud&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-success?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.1.0-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-AGPL--3.0-blue?style=for-the-badge)
 
 ---
@@ -19,7 +19,29 @@ Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files*
   - **Kod i tekst ze składnią**: `.json`, `.yaml`, `.xml`, `.sql`, `.py`, `.js`, `.ts`, `.php`, `.sh`, `.css`, `.html`, `.md`, `.env`, `.log` itp.
 - **Płynna nawigacja klawiaturą**: naciśnięcie strzałek `←` / `→` lub `↑` / `↓` podczas aktywnego podglądu natychmiast przełącza na poprzedni lub kolejny plik w katalogu!
 
-### 2. 📦 Server-side Archive Manager (Rozpakowywanie i Pakowanie ZIP na serwerze)
+### 2. 🛡️ Delete Key Guard (Ochrona przed przypadkowym usunięciem katalogu - Issue #62278)
+- Blokuje wywołanie skasowania całego katalogu nadrzędnego po omyłkowym naciśnięciu klawisza `Delete` lub `Backspace` w oknie plików, jeśli użytkownik nie zaznaczył konkretnych elementów.
+
+### 3. ⚡ Szybkie Przyciski Akcji w Wierszu (Issue #59665)
+- Po najechaniu kursorem na dowolny plik w wierszu pojawiają się bezpośrednie ikony:
+  - ⬇️ **Szybkie pobranie**: natychmiastowe pobranie pliku jednym kliknięciem.
+  - 🗑️ **Szybkie usunięcie**: bezpieczne przeniesienie do kosza z potwierdzeniem, bez konieczności rozwijania menu trzech kropek `...`.
+
+### 4. 👁️ Przełącznik Plików Ukrytych (.dotfiles - Issue #39027)
+- Dedykowany przycisk na pasku narzędzi: **„👁️ Pliki ukryte (Ukryte / Widoczne)”**.
+- Pozwala błyskawicznie ukryć systemowe i techniczne pliki: `.DS_Store`, `Thumbs.db`, `.git`, `.env`, `.htaccess` itp., oczyszczając widok katalogu. Wybór jest trwale zapamiętywany.
+
+### 5. 🔄 Zapamiętywane Sortowanie per Katalog (Issue #65101)
+- Trwałe, niezależne zapamiętywanie wybranego sortowania dla każdego folderu (np. folder ze zdjęciami posortowany wg daty malejąco, a dokumenty alfabetycznie).
+
+### 6. 🕒 Dokładne Znaczniki Czasu (Issue #22278 & #54784)
+- Podgląd pełnej, precyzyjnej daty i godziny (np. `26.10.2026, 22:52:10`) w czytelnym dymku oraz możliwość kliknięcia na kolumnę daty w celu przełączenia z czasu względnego („2 dni temu”) na dokładny.
+
+### 7. 📌 Przypinanie Folderów na Samej Górze (Sticky Folders - PR #61825)
+- Nowa akcja w menu folderu: **„📌 Przypnij / Odepnij z góry”**.
+- Przypięte foldery są zawsze prezentowane na samej górze listy z odznaką 📌, niezależnie od bieżącego sortowania.
+
+### 8. 📦 Server-side Archive Manager (Rozpakowywanie i Pakowanie ZIP na serwerze)
 - **Rozpakuj na serwerze**: Dodaje do menu kontekstowego plików archiwów (`.zip`, `.tar.gz`, `.tgz`) opcję bezpośredniego rozpakowania w chmurze bez marnowania transferu na pobieranie na komputer i ponowne wysyłanie.
 - **Spakuj do ZIP**:
   - Działa dla pojedynczego pliku lub całego katalogu.

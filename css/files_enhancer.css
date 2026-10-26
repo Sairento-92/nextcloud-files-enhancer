@@ -379,3 +379,62 @@
     font-size: 13px;
     margin-top: 4px;
 }
+
+/* Quick Row Actions (Issue #59665) */
+.fe-quick-actions-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 6px;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+tr[data-file]:hover .fe-quick-actions-bar,
+[data-entry-id]:hover .fe-quick-actions-bar {
+    opacity: 1;
+}
+.fe-row-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    line-height: 1;
+    transition: background 0.15s;
+}
+.fe-row-btn:hover {
+    background: var(--color-background-hover, rgba(0, 0, 0, 0.08));
+}
+
+/* Dotfiles Toggle (Issue #39027) */
+.fe-dotfiles-toggle-btn {
+    background: var(--color-main-background, #fff);
+    border: 1px solid var(--color-border, #ccc);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 8px;
+    vertical-align: middle;
+    transition: all 0.15s ease;
+}
+.fe-dotfiles-toggle-btn:hover {
+    background: var(--color-background-hover, rgba(0, 0, 0, 0.05));
+    border-color: var(--color-primary, #0082c9);
+}
+.fe-hidden-dotfile {
+    display: none !important;
+}
+
+/* Pinned Folders (PR #61825) */
+.fe-pinned-row {
+    background: var(--color-primary-element-light, rgba(0, 130, 201, 0.06)) !important;
+}
+.fe-pin-badge {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 13px;
+    vertical-align: middle;
+}
