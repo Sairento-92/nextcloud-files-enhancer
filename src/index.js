@@ -19,6 +19,10 @@ import { PinnedFolders } from './pinnedFolders.js';
 import { BatchShare } from './batchShare.js';
 import { ImageConverter } from './imageConverter.js';
 import { ConflictGuard } from './conflictGuard.js';
+import { FolderTreeDrop } from './folderTreeDrop.js';
+import { RichWorkspace } from './richWorkspace.js';
+import { SecureVault } from './secureVault.js';
+import { DirectOpenRecent } from './directOpenRecent.js';
 
 class FilesEnhancerApp {
     constructor() {
@@ -27,7 +31,7 @@ class FilesEnhancerApp {
     }
 
     init() {
-        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files v1.1.0 (by Sairento)...');
+        console.info('[Files Enhancer] Inicjalizacja pakietu rozszerzeń dla Nextcloud Files v1.3.0 (by Sairento)...');
 
         const bootstrap = () => {
             if (this.initialized) return;
@@ -51,6 +55,10 @@ class FilesEnhancerApp {
             new BatchShare();        // Issue #3902 & #26248
             new ImageConverter();    // Media conversion (WebP, PNG, JPG)
             new ConflictGuard();     // Issue #33719
+            new FolderTreeDrop();    // Issue #65764
+            new RichWorkspace();     // Issue #62413
+            new SecureVault();       // Issue #56519
+            new DirectOpenRecent();  // Issue #56420
 
             this.injectHeaderPill();
             this.initialized = true;

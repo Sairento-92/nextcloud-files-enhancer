@@ -504,3 +504,62 @@ tr[data-file]:hover .fe-quick-actions-bar,
     word-break: break-word;
     overflow-wrap: break-word;
 }
+
+/* Folder Tree Drop (Issue #65764) */
+.fe-tree-dragover {
+    background-color: var(--color-primary-element-light, rgba(0, 130, 201, 0.2)) !important;
+    outline: 2px dashed var(--color-primary, #0082c9) !important;
+    border-radius: 4px;
+}
+
+/* Rich Workspace Header (Issue #62413) */
+.fe-rich-workspace-card {
+    background: var(--color-main-background, #fff);
+    border: 1px solid var(--color-border, #e0e0e0);
+    border-radius: 8px;
+    margin: 12px 0 16px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.fe-rw-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    background: var(--color-main-background-translucent, rgba(0, 0, 0, 0.03));
+    border-bottom: 1px solid var(--color-border, #eee);
+    font-size: 13px;
+    font-weight: 600;
+}
+.fe-rw-icon {
+    margin-right: 6px;
+}
+.fe-rw-title {
+    flex: 1;
+}
+.fe-rw-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    color: var(--color-text-maxcontrast, #888);
+}
+.fe-rw-body {
+    padding: 12px 16px;
+    font-size: 13px;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: max-height 0.2s ease;
+}
+.fe-rw-body.fe-collapsed {
+    max-height: 0;
+    padding: 0 16px;
+    overflow: hidden;
+}
+.fe-rw-content {
+    margin: 0;
+    font-family: inherit;
+    white-space: pre-wrap;
+    word-break: break-word;
+}

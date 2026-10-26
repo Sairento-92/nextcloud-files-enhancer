@@ -3,14 +3,29 @@
 Zaawansowane, wielofunkcyjne rozszerzenie (plugin) dla chmury **Nextcloud Files** (`/apps/files`), wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności, narzędzia masowe, podglądy i potężny zestaw poleceń konsolowych OCC.
 
 ![Files Enhancer Badge](https://img.shields.io/badge/Nextcloud-Files_Enhancer-0082c9?style=for-the-badge&logo=nextcloud&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.2.0-success?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.3.0-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-AGPL--3.0-blue?style=for-the-badge)
 
 ---
 
 ## 🌟 Najważniejsze Możliwości i Funkcje
 
-### 1. ⚡ QuickLook (Błyskawiczny Podgląd Spacją)
+### 1. 📂 Przeciąganie i Upuszczanie do Drzewa Katalogów (Drag & Drop to Folder Tree - Issue #65764)
+- Bezpośrednie przeciąganie plików i folderów z listy na boczne menu nawigacji drzewa folderów po lewej stronie.
+- Automatyczne podświetlenie docelowego katalogu i bezproblemowe przenoszenie przez natywne żądanie WebDAV MOVE.
+
+### 2. 📖 Rich Workspace README Header (Opis folderu - Issue #62413)
+- Automatyczne wykrywanie pliku `README.md` w bieżącym katalogu i wyświetlanie estetycznego, czytelnego panelu opisu na samej górze widoku plików.
+- Przycisk zwijania/rozwijania panelu (▼/▲) z zachowaniem pełnego formatowania.
+
+### 3. 🔒 Prywatny Sejf Folderu (Secure Vault Folder - Issue #56519)
+- Możliwość zabezpieczenia dowolnego folderu osobnym hasłem lub PIN-em („Zabezpiecz hasłem (Sejf)”).
+- Automatyczne blokowanie i rozmycie widoku przy wejściu do zabezpieczonego folderu z monitem o hasło dostępu (działa jak OneDrive Personal Vault).
+
+### 4. ⚡ Bezpośredni Podgląd z „Ostatnie” i „Ulubione” (Issue #56420)
+- Kliknięcie w plik w widokach zagregowanych (Ostatnie, Ulubione, Udostępnione) natychmiast wywołuje podgląd QuickLook bez niepożądanego przeładowania strony i gubienia kontekstu.
+
+### 5. ⚡ QuickLook (Błyskawiczny Podgląd Spacją)
 - **Naciśnięcie Spacji (Spacebar)** na zaznaczonym pliku natychmiast otwiera pełny, płynny podgląd pliku bez otwierania ciężkich edytorów zewnętrznych (działa dokładnie tak jak w systemie macOS lub QuickLook na Windows).
 - **Obsługa multimediów i dokumentów**:
   - **Zdjęcia i grafika**: JPG, PNG, GIF, WebP, SVG, AVIF, BMP.

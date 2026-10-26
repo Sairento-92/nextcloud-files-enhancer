@@ -6,6 +6,10 @@
     <summary>Zaawansowany zestaw narzędzi dla Nextcloud Files: QuickLook (podgląd spacją), archiwizator ZIP/TAR na serwerze, hurtowa zmiana nazw, kolorowe etykiety, kalkulator hashy i narzędzia OCC.</summary>
     <description>Rozszerzenie dla Nextcloud Files wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności:
     - ⚡ QuickLook: Błyskawiczny podgląd plików po naciśnięciu Spacji (obrazy, filmy, audio, dokumenty, kod z kolorowaniem składni, PDF) z płynną nawigacją strzałkami.
+    - 📂 Drag &amp; Drop do drzewa katalogów (Issue #65764): Przeciąganie i upuszczanie plików bezpośrednio na boczne drzewo nawigacji folderów.
+    - 📖 Rich Workspace README Header (Issue #62413): Automatyczny, zwijany estetyczny panel z podglądem pliku README.md na górze katalogu.
+    - 🔒 Prywatny Sejf Folderu (Issue #56519): Ochrona poufnych folderów osobnym hasłem/PIN-em (ukrywanie zawartości w widoku).
+    - ⚡ Bezpośredni podgląd z Ostatnie/Ulubione (Issue #56420): Szybkie otwieranie i podgląd plików bez utraty kontekstu nawigacji.
     - 🛡️ Delete Key Guard (Issue #62278): Ochrona przed przypadkowym usunięciem bieżącego katalogu po naciśnięciu Delete.
     - ⚡ Szybkie akcje wiersza (Issue #59665): Bezpośrednie ikony szybkiego pobrania i usunięcia w wierszu pliku (hover).
     - 👁️ Przełącznik ukrytych plików (Issue #39027): Przycisk ukrywania/pokazywania .dotfiles (.DS_Store, .git, .env, Thumbs.db).
@@ -29,7 +33,7 @@
       * occ files:enhancer:cleanup-orphans - bezpieczne usuwanie osieroconych rekordów bazy filecache
     - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
     </description>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <licence>agpl</licence>
     <author>Sairento / Huriko</author>
     <namespace>FilesEnhancer</namespace>
