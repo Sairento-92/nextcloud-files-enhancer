@@ -5,15 +5,28 @@ const { execSync } = require('child_process');
 console.log('--- Rozpoczynanie budowania Nextcloud Files Enhancer ---');
 
 // 1. Bundle JavaScript with esbuild
-const esbuild = require('B:/Projekty/talk-desktop/node_modules/esbuild');
-esbuild.buildSync({
-  entryPoints: [path.join(__dirname, 'src', 'index.js')],
-  bundle: true,
-  outfile: path.join(__dirname, 'js', 'files_enhancer.js'),
-  minify: true,
-  format: 'iife',
-  nodePaths: ['B:/Projekty/talk-desktop/node_modules']
-});
+let esbuild;
+try {
+  esbuild = require('esbuild');
+} catch {
+  try {
+    esbuild = require('B:/Projekty/talk-desktop/node_modules/esbuild');
+  } catch (e) {
+    console.warn('esbuild nie znaleziony, używam npx esbuild...');
+  }
+}
+
+if (esbuild) {
+  esbuild.buildSync({
+    entryPoints: [path.join(__dirname, 'src', 'index.js')],
+    bundle: true,
+    outfile: path.join(__dirname, 'js', 'files_enhancer.js'),
+    minify: true,
+    format: 'iife'
+  });
+} else {
+  execSync(`npx -y esbuild src/index.js --bundle --minify --format=iife --outfile=js/files_enhancer.js`, { stdio: 'inherit' });
+}
 
 const jsStat = fs.statSync(path.join(__dirname, 'js', 'files_enhancer.js'));
 console.log('✓ Zbudowano js/files_enhancer.js, rozmiar:', jsStat.size, 'bajtów');

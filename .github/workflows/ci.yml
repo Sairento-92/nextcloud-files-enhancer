@@ -37,6 +37,10 @@ jobs:
         run: |
           node test_runner.js
 
+      - name: Install esbuild
+        run: |
+          npm install --no-save esbuild
+
       - name: Build Nextcloud App Package
         run: |
           node build.js
