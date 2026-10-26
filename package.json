@@ -1,0 +1,11 @@
+{
+  "name": "nextcloud-files-enhancer",
+  "version": "1.0.0",
+  "description": "Zaawansowany zestaw narzędzi dla Nextcloud Files: QuickLook, rozpakowywanie zip na serwerze, hurtowa zmiana nazw, kolorowe etykiety, hashe i narzędzia OCC",
+  "main": "js/files_enhancer.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Sairento / Huriko",
+  "license": "AGPL-3.0-or-later"
+}

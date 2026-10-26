@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>files_enhancer</id>
+    <name>Files Enhancer (by Sairento)</name>
+    <summary>Zaawansowany zestaw narzędzi dla Nextcloud Files: QuickLook (podgląd spacją), archiwizator ZIP/TAR na serwerze, hurtowa zmiana nazw, kolorowe etykiety, kalkulator hashy i narzędzia OCC.</summary>
+    <description>Rozszerzenie dla Nextcloud Files wzbogacające menedżer plików o najbardziej wyczekiwane funkcje społeczności:
+    - ⚡ QuickLook: Błyskawiczny podgląd plików po naciśnięciu Spacji (obrazy, filmy, audio, dokumenty, kod z kolorowaniem składni, PDF) z płynną nawigacją strzałkami.
+    - 📦 Server-side Archive Manager: Rozpakowywanie archiwów ZIP i TAR.GZ bezpośrednio na serwerze bez konieczności pobierania, oraz kompresja wybranych plików do nowego archiwum ZIP.
+    - 🏷️ Kolorowe etykiety (Color Tags): Oznaczanie plików i folderów kolorowymi punktami (jak w macOS Finder) dla łatwej organizacji wizualnej i szybkiego filtrowania.
+    - 🔤 Hurtowa zmiana nazw (Batch Renamer): Masowa modyfikacja nazw plików (prefiks, sufiks, zamiana tekstu, numeracja sekwencyjna 001..099).
+    - 🔍 Kalkulator Sum Kontrolnych (Checksums): Obliczanie i weryfikacja sum MD5, SHA-1 oraz SHA-256 bezpośrednio z menu kontekstowego pliku wraz z porównywarką hashy.
+    - 📐 Rozmiar folderów w czasie rzeczywistym: Błyskawiczne obliczanie rzeczywistej wielkości wybranego folderu i liczby podfolderów.
+    - 📋 Bezpośrednie linki i ścieżki WebDAV: Szybkie kopiowanie ścieżki wewnętrznej oraz URL WebDAV do schowka.
+    - 🛠️ Zestaw poleceń konsolowych OCC:
+      * occ files:enhancer:duplicates - detekcja duplikatów w magazynach użytkowników z kalkulacją odzyskanego miejsca
+      * occ files:enhancer:scan-deep - głębokie skanowanie i naprawa osieroconych wpisów cache
+      * occ files:enhancer:stats - szczegółowe statystyki typów plików (obrazy, filmy, dokumenty, kod)
+      * occ files:enhancer:cleanup-trash - inteligentne czyszczenie kosza i starych wersji
+    - ⚙️ Panel Administracyjny Nextcloud: Graficzna konfiguracja aktywnych modułów i uprawnień w ustawieniach administracyjnych.
+    </description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Sairento / Huriko</author>
+    <namespace>FilesEnhancer</namespace>
+    <category>tools</category>
+    <category>organization</category>
+    <dependencies>
+        <nextcloud min-version="25" max-version="35"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\FilesEnhancer\Settings\Admin</admin>
+    </settings>
+</info>
